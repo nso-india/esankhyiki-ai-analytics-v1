@@ -870,7 +870,6 @@ def get_db_pool(db_name):
             2, 5,
             port=5432,
             user="postgres",
-
             database=db_name
         )
     return db_pools[db_name]
