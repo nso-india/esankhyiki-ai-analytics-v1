@@ -868,10 +868,9 @@ def get_db_pool(db_name):
     if db_name not in db_pools:
         db_pools[db_name] = SimpleConnectionPool(
             2, 5,
-            host="103.48.43.11",
             port=5432,
             user="postgres",
-            password="root456",
+
             database=db_name
         )
     return db_pools[db_name]
