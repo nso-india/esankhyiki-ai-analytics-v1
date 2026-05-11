@@ -359,10 +359,8 @@ Find `get_db_pool()` in `app_34.py` and update:
 ```python
 db_pools[db_name] = SimpleConnectionPool(
     2, 5,
-    host     = "103.48.43.11",   # ← your PostgreSQL host
     port     = 5432,
     user     = "postgres",       # ← your DB username
-    password = "root456",        # ← your DB password
     database = db_name
 )
 ```
